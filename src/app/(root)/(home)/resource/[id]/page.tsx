@@ -6,7 +6,6 @@ import ResourceCart from '@/components/ResourseCart';
 import { getResources } from '../../../../../../sanity/actions';
 import { PortableTextInput, PortableTextBlock } from 'sanity';
 import { PortableText } from "@portabletext/react";
-import PortableTextWithStyles from '@/components/PortableText';
 import Image from 'next/image';
 import Link from 'next/link';
 // import { getOneResource, getResources } from '../../../../../../sanity/actions';
@@ -50,7 +49,7 @@ const ResourcePage = async ({ params }: { params: { id: string } }) => {
 
             <div className="md:p-6 mt-3 py-6 w-full text-left text-sm  md:text-lg">
               <h1 className='  font-bold text-center !text-2xl my-3'>What You'll <span className='text-gradient_blue-purple text-2xl'>Learn Here</span></h1>
-              <PortableTextWithStyles value={resource.content} />
+              <PortableText value={resource.content} components={{}} />
               {/* about leran code */}
               <div className="flex flex-col justify-between gap-3 mt-3.5 md:flex-row">
 

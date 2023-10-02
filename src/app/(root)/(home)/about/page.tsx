@@ -82,7 +82,7 @@ Whether you are preparing for exams, seeking to expand your coding skills, or si
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 1 }}
-          className="bg-[#222] rounded-lg p-8 shadow-lg"
+          className="bg-black-100 rounded-lg p-8 shadow-lg border border-1 border-gray-400"
         >
           <div className="flex items-center mb-4">
             <Image src="/jude.png" width={80} height={60} alt="Testimonial Image" className="rounded-full object-content" />
@@ -92,7 +92,7 @@ Whether you are preparing for exams, seeking to expand your coding skills, or si
             </div>
           </div>
           <p className="text-gray-700">
-            "W teach, Inspire, Grow and Build Together the Future....."
+            "We teach, Inspire, Grow and Build Together the Future....."
           </p>
         </motion.div>
       </div>
