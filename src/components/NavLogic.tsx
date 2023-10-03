@@ -22,7 +22,7 @@ const NavLogic = () => {
 
             <button className="outline-none" onClick={() => setOpen(!open)}>
                 {!open ? (<Image src="/hamburger-menu.svg" width={30} height={30} alt="hamburger" className="block md:hidden" />) :
-                    (<Image src="/downloads.svg" width={30} height={30} alt="hamburger" className="block md:hidden" />)
+                    (<Image src="/close.svg" width={30} height={30} alt="close" className="block md:hidden" />)
 
                 }
             </button>

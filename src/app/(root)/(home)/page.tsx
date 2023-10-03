@@ -44,7 +44,7 @@ return(
             <div className="mt-12 flex w-full grid-cols-3 justify-center gap-16 sm:justify-start">
             {resources?.length > 0 ? (
               resources.map((resource: any) => (
-                <div className="box bg-[#111] rounded-lg shadow-lg  hover:shadow-xl p-6 transition-all duration-100">
+                <div className="box bg-[#111] rounded-lg shadow-lg  hover:shadow-xl p-6 transition-all duration-100 grid  grid-cols-4 max-md:grid-cols-1">
                 <ResourceCart 
                   key={resource._id}
                   title={resource.title}

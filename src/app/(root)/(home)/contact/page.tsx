@@ -21,8 +21,8 @@ const ContactPage = () => {
     // Send email using EmailJS
     emailjs
       .send(
-        process.env.SERVICE_ID!,
-        process.env.TEMPLATE_ID!,
+        "service_wzlow5b",
+        "template_teu4p9n",
         {
           name: formData.name,
           topic: formData.topic,

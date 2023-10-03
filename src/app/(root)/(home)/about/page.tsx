@@ -31,7 +31,7 @@ const AboutPage = () => {
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="text-lg text-left mb-8 text-gray-400"
+          className="text-lg text-left mb-8 text-gray-400 sm:text-[17px]"
         >
           LearnCode is a platform dedicated to assisting individuals who have a strong passion for technology, avid readers of books and science fiction, and those preparing for exams. Our primary aim is to provide valuable resources in the form of insightful blog articles and downloadable PDFs.
 
@@ -64,14 +64,14 @@ Whether you are preparing for exams, seeking to expand your coding skills, or si
           className="flex space-x-4"
         >
           <Link href="#" className="text-blue-500 hover:text-blue-700">
-            <Image src="/background.png" alt='social' width={30} height={30}/>
+            <Image src="/twitter.svg" alt='social' width={30} height={30}/>
           </Link>
           <Link href="#" className="text-blue-500 hover:text-blue-700">
-          <Image src="/background.png" alt='social' width={30} height={30}/>
+          <Image src="/github.svg" alt='social' width={30} height={30}/>
             
           </Link>
           <Link href="#" className="text-blue-500 hover:text-blue-700">
-          <Image src="/background.png" alt='social' width={30} height={30}/>
+          <Image src="/linkedin.svg" alt='social' width={30} height={30}/>
             
           </Link>
         </motion.div>
