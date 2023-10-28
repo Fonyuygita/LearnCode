@@ -6,6 +6,7 @@ import { motion } from 'framer-motion';
 import Link from 'next/link';
 
 const AboutPage = () => {
+  
   return (
     <div className="container mx-auto p-8 flex-center paddings mx-auto w-full max-w-screen-2xl flex-col mt-[125px]">
       <div className="flex flex-col items-center">
@@ -39,11 +40,6 @@ At LearnCode, we understand the ever-evolving world of technology and the enthus
 
 We recognize the importance of learning through various mediums, and that's why we offer a diverse range of resources. Our blog section is curated by industry experts who share their knowledge, experiences, and insights, covering a wide array of topics related to coding, technology advancements, and emerging trends. From beginner-friendly tutorials to in-depth analysis of complex concepts, our blog articles are crafted to be informative, engaging, and easily understandable.
 
-For those who prefer a more traditional approach to learning, we provide downloadable PDFs that delve into specific topics in detail. These comprehensive resources serve as valuable references, allowing you to study at your own pace and revisit the content whenever necessary.
-
-At LearnCode, we believe in the power of community and the strength that comes from shared knowledge. We encourage interaction and engagement among our users, fostering a supportive environment where individuals can connect, ask questions, and exchange ideas. Our platform serves as a hub for like-minded individuals to come together, learn from one another, and grow collectively.
-
-Whether you are preparing for exams, seeking to expand your coding skills, or simply exploring the world of technology and science fiction, LearnCode aims to be your trusted companion on your learning journey. Join us today and embark on a fulfilling experience as you unlock the vast potential of the digital world.
 
         </motion.p>
       </div>
