@@ -61,7 +61,7 @@ We recognize the importance of learning through various mediums, and that's why 
         >
           <Link href="https://fonyuygita.vercel.app" className="text-blue-500 hover:text-blue-700 flex items-center justify-center gap-2">
           <FaLink />
-          <span>portfolio</span>
+          <span>check portfolio</span>
           </Link>
          
         </motion.div>
