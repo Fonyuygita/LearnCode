@@ -4,7 +4,7 @@ import React from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
-import { FaLink } from 'react-icons/fa';
+
 const AboutPage = () => {
   
   return (
@@ -60,7 +60,7 @@ We recognize the importance of learning through various mediums, and that's why 
           className="flex space-x-4"
         >
           <Link href="https://fonyuygita.vercel.app" className="text-blue-500 hover:text-blue-700 flex items-center justify-center gap-2">
-          <FaLink />
+          
           <span>check portfolio</span>
           </Link>
          
