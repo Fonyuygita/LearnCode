@@ -5,8 +5,66 @@ import React from "react"
 import { getResources, getResourcesPlaylist } from "../../../../sanity/actions"
 import ResourceCart from "@/components/ResourseCart"
 import Header from "@/components/Header"
+import { Metadata } from "next"
 
 export const revalidate = 900;
+
+
+export const metadata: Metadata = {
+  title: "Learn Code, Coding Resources",
+  description:
+    "Get inspired with tech stuffs, Articles, talks, inspirations",
+  keywords: [
+    "learncode",
+    "fonyuy",
+    "learn coding",
+    "code learn",
+    "seed bamenda",
+    "seed 50 days of code",
+    "learncoding",
+    "fomonyuy jude",
+    "fonyuy jude fomonyuy",
+    "nquami",
+    "tech tutor vercel",
+    "tech tutor",
+    "tech tutor seed",
+    "fonyuy gita"
+  ],
+  openGraph: {
+    url: "https://learncode.vercel.app",
+    type: "website",
+    title: "Learn Code | SEED",
+    description:"Get inspired with tech stuffs, Articles, talks, inspirations.",
+    images: [
+      {
+        url: "https://i.ibb.co/9wwVdrM/studio-c38ec3ff8b3bff1213aa0851ab611dca-fdvkyhpv.jpg",
+        width: 1200,
+        height: 630,
+        alt: "gita"
+      }
+    ]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Learn Code, Coding Resources",
+    description:"Get inspired with tech stuffs, Articles, talks, inspirations",
+    creator: "@learncode",
+    site: "@learncode",
+    images: [
+      {
+        url: "https://i.ibb.co/9wwVdrM/studio-c38ec3ff8b3bff1213aa0851ab611dca-fdvkyhpv.jpg",
+        width: 1200,
+        height: 630,
+        alt: "fonyuygita"
+      }
+    ]
+  },
+  alternates: {
+    canonical: "https://learncode.vercel.app"
+  }
+};
+
+
 
 interface Props{
 searchParams : {[key:string] : string | undefined}

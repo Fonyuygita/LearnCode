@@ -4,7 +4,7 @@ import React from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
-
+import { FaLink } from 'react-icons/fa';
 const AboutPage = () => {
   
   return (
@@ -51,7 +51,7 @@ We recognize the importance of learning through various mediums, and that's why 
           transition={{ duration: 0.8, delay: 0.6 }}
           className="text-2xl font-bold mb-4 text-gradient_blue-purple"
         >
-          Follow us on social media:
+          Know more about me:
         </motion.h2>
         <motion.div
           initial={{ opacity: 0, y: -50 }}
@@ -59,17 +59,11 @@ We recognize the importance of learning through various mediums, and that's why 
           transition={{ duration: 0.8, delay: 0.8 }}
           className="flex space-x-4"
         >
-          <Link href="#" className="text-blue-500 hover:text-blue-700">
-            <Image src="/twitter.svg" alt='social' width={30} height={30}/>
+          <Link href="https://fonyuygita.vercel.app" className="text-blue-500 hover:text-blue-700 flex items-center justify-center gap-2">
+          <FaLink />
+          <span>portfolio</span>
           </Link>
-          <Link href="#" className="text-blue-500 hover:text-blue-700">
-          <Image src="/github.svg" alt='social' width={30} height={30}/>
-            
-          </Link>
-          <Link href="#" className="text-blue-500 hover:text-blue-700">
-          <Image src="/linkedin.svg" alt='social' width={30} height={30}/>
-            
-          </Link>
+         
         </motion.div>
       </div>
 
