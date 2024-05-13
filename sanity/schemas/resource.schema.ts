@@ -58,7 +58,7 @@ const schema = {
       type: 'string',
       validation: (Rule: any) => Rule.required(),
       options: {
-        list: ['Next 13', 'frontend', 'backend', 'fullstack', 'React Native', 'C programming', 'Mathematics', 'Computer Science Concepts', 'Virtual Reality', 'Machine Learning']
+        list: ['Next 13', 'frontend', 'backend', 'fullstack', 'React Native', 'C programming', 'Mathematics', 'Computer Science Concepts', 'Virtual Reality', 'Machine Learning', "Presentations", "Inspiration"]
 
       }
     }

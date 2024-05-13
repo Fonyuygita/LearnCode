@@ -81,7 +81,7 @@ We recognize the importance of learning through various mediums, and that's why 
           className="bg-black-100 rounded-lg p-8 shadow-lg border border-1 border-gray-400"
         >
           <div className="flex items-center mb-4">
-            <Image src="/jude.png" width={80} height={60} alt="Testimonial Image" className="rounded-full object-content" />
+            <Image src="/user.png" width={80} height={60} alt="Testimonial Image" className="rounded-full object-content" />
             <div className="ml-4 bg-[#111] p-3 rounded-md shadow-lg p-4 rounded-lg ">
               <h3 className="text-lg font-semibold text-gray-200">Fonyuy Gita</h3>
               <p className="text-gray-300">Founder, LearnCode</p>

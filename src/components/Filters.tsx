@@ -4,7 +4,7 @@ import React, { useRef, useState } from "react";
 import { useSearchParams, useRouter } from 'next/navigation'
 import { formUrlQuery } from "../../sanity/utils";
 
-const links = ['all', 'Next 13', 'frontend', 'backend', 'fullstack', 'React Native', 'c programming', 'Mathematics', 'Computer Science Concepts', 'Virtual Reality', 'Machine Learning']
+const links = ['all', 'Next 13', 'frontend', 'backend', 'fullstack', 'React Native', 'c programming', 'Mathematics', 'Computer Science Concepts', 'Virtual Reality', 'Machine Learning', 'presentations','inspiration']
 
 
 const Filter=()=>{

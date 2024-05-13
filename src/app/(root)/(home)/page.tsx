@@ -41,10 +41,11 @@ return(
             query={searchParams?.query || ''}
             category={searchParams?.category || ''}
           />
-            <div className="mt-12 flex w-full grid-cols-3 justify-center gap-16 sm:justify-start">
+            <div className="mt-12 grid w-full grid-cols-4  max-md:grid-cols-1 justify-center gap-16 sm:justify-start">
             {resources?.length > 0 ? (
               resources.map((resource: any) => (
-                <div className="box bg-[#111] rounded-lg shadow-lg  hover:shadow-xl p-6 transition-all duration-100 grid  grid-cols-4 max-md:grid-cols-1">
+                <div className="box bg-[#0a030318] rounded-lg shadow-lg  hover:shadow-xl p-6 transition-all duration-100 grid  grid-cols-1
+                 max-md:grid-cols-1 focus:bg-[#111]">
                 <ResourceCart 
                   key={resource._id}
                   title={resource.title}
@@ -70,9 +71,9 @@ return(
          {resourcesPlayList.map((item: any) => (
         <section key={item._id} className="flex-center mt-6 w-full flex-col sm:mt-20">
           <h1 className="heading3 self-start text-white-800">{item.title}</h1>
-          <div className="mt-12 flex w-full grid  grid-cols-4 justify-center gap-16 sm:justify-start max-md:grid-cols-1">
+          <div className="mt-12 flex w-full grid  grid-cols-3 justify-center gap-16 sm:justify-start max-md:grid-cols-1">
             {item.resources.map((resource: any) => (
-                <div className="box bg-[#222] rounded-lg shadow-lg  hover:shadow-xl p-6 transition-all duration-100">
+                <div className="box bg-[#0a030318]  rounded-lg shadow-2xl  hover:shadow-xl p-6 transition-all duration-100">
 
                 <ResourceCart 
                   key={resource._id}

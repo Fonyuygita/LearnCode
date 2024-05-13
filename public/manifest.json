@@ -2,11 +2,11 @@
     "name": "Learn-Code",
     "short_name": "LearnCode",
     "theme_color": "#8C7CFF",
-    "background_color": "#000000",
+    "background_color": "##0D1117",
     "display": "standalone",
     "scope": "/",
     "start_url": "/",
-    "description": "Minimal configuration for a NextJS installable app",
+    "description": "Get your tech resources free of here.",
     "icons": [
       {
         "src": "/icon-512x512.png",
