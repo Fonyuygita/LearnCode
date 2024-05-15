@@ -6,6 +6,7 @@ import { getResources, getResourcesPlaylist } from "../../../../sanity/actions"
 import ResourceCart from "@/components/ResourseCart"
 import Header from "@/components/Header"
 import { Metadata } from "next"
+import SeedResourceCard from "@/components/seed-resources"
 
 export const revalidate = 900;
 
@@ -48,6 +49,11 @@ return(
             category={searchParams?.category || ''}
           />
             <div className="mt-12 grid w-full grid-cols-4  max-md:grid-cols-1 justify-center gap-16 sm:justify-start">
+<SeedResourceCard
+title="SEED 50 DAYS OF CODE CHALLENGE"
+image="/seed.png"
+/>
+
             {resources?.length > 0 ? (
               resources.map((resource: any) => (
                 <div className="box bg-[#0a030318] rounded-lg shadow-lg  hover:shadow-xl p-6 transition-all duration-100 grid  grid-cols-1
