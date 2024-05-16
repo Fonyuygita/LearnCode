@@ -18,14 +18,14 @@ type Course = {
 const coursesData: Course[] = [
   {
     id: 1,
-    name: 'HTML Fundamentals',
+    name: 'Introduction to HTML',
     description: 'Learn the building blocks of web development with HTML.',
     imageUrl: '/resources/html.png',
     category: 'frontend',
   },
   {
     id: 2,
-    name: 'Advanced CSS',
+    name: 'Intermediate HTML',
     description: 'Style beautiful websites with advanced CSS techniques.',
     imageUrl: '/resources/css.png',
     category: 'frontend',
@@ -33,21 +33,21 @@ const coursesData: Course[] = [
 
   {
     id: 21,
-    name: 'Javascript',
+    name: 'Advance Html',
     description: 'programming beautiful websites with advanced CSS techniques.',
     imageUrl: '/resources/javascript.png',
     category: 'frontend',
   },
   {
     id: 3,
-    name: 'Bootstrap Essentials',
+    name: 'CSS',
     description: 'Create responsive layouts with the Bootstrap framework.',
     imageUrl: '/resources/bootstrap.png',
     category: 'frontend',
   },
   {
     id: 4,
-    name: 'Sass Styling',
+    name: 'Beginner level Javascript',
     description: 'Preprocess your CSS with powerful Sass features.',
     imageUrl: '/resources/sass.png',
     category: 'frontend',
@@ -111,40 +111,40 @@ const Home: React.FC = () => {
   
 
   // Filter courses based on the category
-  const filteredCourses = coursesData.filter((course) =>
-    filter === 'all' ? true : course.category === filter
-  );
+
 
   return (
     <div className="container mx-auto p-4 mt-[160px]">
       <div className="flex gap-4 mb-4">
         {/* Category filters */}
-        <button onClick={() => setFilter('all')} className="gradient_blue-purple whitespace-nowrap rounded-lg px-8 py-2.5 capitalize">All</button>
-        <button onClick={() => setFilter('frontend')} className="text-white">Frontend</button>
-        <button onClick={() => setFilter('backend')} className="text-white">Backend</button>
+        
         {/* Add more categories as needed */}
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-5 lg:grid-cols-4 gap-4">
         {/* Map through the filtered courses and display each course */}
-        {filteredCourses.map((course) => (
+        {coursesData.map((course) => (
           <div key={course.id} className="card">
-            <Link href={`/resources/12`} className='box bg-[#0a030318] rounded-lg shadow-lg  hover:shadow-xl p-6 transition-all duration-100 grid  grid-cols-1
+            <div className='box bg-[#0a030318] rounded-lg shadow-lg cursor-pointer hover:shadow-xl p-6 transition-all duration-100 grid  grid-cols-1
                  max-md:grid-cols-1 focus:bg-[#111]'>
               
-                <div className="relative h-60 max-md:h-20">
+                <div className="relative h-60">
                   <Image
-                    src={course.imageUrl}
+                    src="/download.png"
                     alt={course.name}
                     layout="fill"
                     objectFit="cover"
                   />
                 </div>
                 <div className="p-4">
-                  <h3 className="text-1xl font-bold text-white-500">{course.name}</h3>
-                  <p className="text-gray-600">{course.description}</p>
+          <h3 className='mt-2 text-[#999] body-semibold gap-1.5 '>{course.name}</h3>
+
+                <a href="/downloads/1.0 introduction.rar" download  className="flex-between text-gradient_purple-blue body-semibold gap-1.5 mt-5">
+            Download resources
+            <Image src="/arrow-blue.svg" width={13} height={10} alt="arrow"  />
+          </a>
                 </div>
               
-            </Link>
+            </div>
           </div>
         ))}
       </div>
