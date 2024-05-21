@@ -4,103 +4,21 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { useParams } from 'next/navigation';
+import { coursesData } from '@/lib/resourses_download';
 
-// Define the course type
-type Course = {
-  id: number;
-  name: string;
-  description: string;
-  imageUrl: string;
-  category: string;
-};
-
-
-const coursesData: Course[] = [
-  {
-    id: 1,
-    name: 'Introduction to HTML',
-    description: 'Learn the building blocks of web development with HTML.',
-    imageUrl: '/resources/html.png',
-    category: 'frontend',
-  },
-  {
-    id: 2,
-    name: 'Intermediate HTML',
-    description: 'Style beautiful websites with advanced CSS techniques.',
-    imageUrl: '/resources/css.png',
-    category: 'frontend',
-  },
-
-  {
-    id: 21,
-    name: 'Advance Html',
-    description: 'programming beautiful websites with advanced CSS techniques.',
-    imageUrl: '/resources/javascript.png',
-    category: 'frontend',
-  },
-  {
-    id: 3,
-    name: 'CSS',
-    description: 'Create responsive layouts with the Bootstrap framework.',
-    imageUrl: '/resources/bootstrap.png',
-    category: 'frontend',
-  },
-  {
-    id: 4,
-    name: 'Beginner level Javascript',
-    description: 'Preprocess your CSS with powerful Sass features.',
-    imageUrl: '/resources/sass.png',
-    category: 'frontend',
-  },
-  {
-    id: 5,
-    name: 'Node.js Basics',
-    description: 'Build scalable backend applications with Node.js.',
-    imageUrl: '/resources/node.png',
-    category: 'backend',
-  },
-  {
-    id: 6,
-    name: 'Express in Action',
-    description: 'Learn to build web applications with the Express framework.',
-    imageUrl: '/resources/express.png',
-    category: 'backend',
-  },
-  {
-    id: 7,
-    name: 'MongoDB Mastery',
-    description: 'Master NoSQL databases with MongoDB.',
-    imageUrl: '/resources/mongo.png',
-    category: 'backend',
-  },
-  {
-    id: 8,
-    name: 'TypeScript Techniques',
-    description: 'Enhance your JavaScript with TypeScript.',
-    imageUrl: '/resources/typescript.png',
-    category: 'frontend',
-  },
-  {
-    id: 9,
-    name: 'MySQL Database Design',
-    description: 'Design and manage databases with MySQL.',
-    imageUrl: '/resources/msql.png',
-    category: 'backend',
-  },
-  {
-    id: 10,
-    name: 'Mastering PostgreSQL',
-    description: 'Develop robust databases with PostgreSQL.',
-    imageUrl: '/img.png',
-    category: 'backend',
-  }
-];
 
 
 
 
 const Home: React.FC = () => {
   const [filter, setFilter] = useState('all');
+  const params=useParams<{id:string}>()
+  const {id}=params
+
+  const convertedId=parseInt(id);
+
+
 
   const [isActtive, setIsActive]=useState(false)
 
@@ -109,6 +27,9 @@ const Home: React.FC = () => {
   }
   
   
+
+  const getCourses=coursesData.find(data=>data.id===convertedId)
+  console.log(getCourses);
 
   // Filter courses based on the category
 
