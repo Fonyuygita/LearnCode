@@ -29,7 +29,7 @@ const Home: React.FC = () => {
   
 
   const getCourses=coursesData.find(data=>data.id===convertedId)
-  console.log(getCourses);
+  
 
   // Filter courses based on the category
 
@@ -43,7 +43,7 @@ const Home: React.FC = () => {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-5 lg:grid-cols-4 gap-4">
         {/* Map through the filtered courses and display each course */}
-        {coursesData.map((course) => (
+        {getCourses?.resource.map((course) => (
           <div key={course.id} className="card">
             <div className='box bg-[#0a030318] rounded-lg shadow-lg cursor-pointer hover:shadow-xl p-6 transition-all duration-100 grid  grid-cols-1
                  max-md:grid-cols-1 focus:bg-[#111]'>
@@ -51,18 +51,21 @@ const Home: React.FC = () => {
                 <div className="relative h-60">
                   <Image
                     src="/download.png"
-                    alt={course.name}
+                    alt={course.description}
                     layout="fill"
                     objectFit="cover"
                   />
                 </div>
                 <div className="p-4">
-          <h3 className='mt-2 text-[#999] body-semibold gap-1.5 '>{course.name}</h3>
+          <h3 className='mt-2 text-[#999] body-semibold gap-1.5 '>{course.description}</h3>
+{course.downloadUrls==="/patient/" ? (<Link className="flex-between text-gradient_purple-blue body-semibold gap-1.5 mt-5" href="/patient">you wan try?</Link>) : (
+      <a href={course.downloadUrls} download  className="flex-between text-gradient_purple-blue body-semibold gap-1.5 mt-5">
+      Download resources
+      <Image src="/arrow-blue.svg" width={13} height={10} alt="arrow"  />
+    </a>
 
-                <a href="/downloads/1.0 introduction.rar" download  className="flex-between text-gradient_purple-blue body-semibold gap-1.5 mt-5">
-            Download resources
-            <Image src="/arrow-blue.svg" width={13} height={10} alt="arrow"  />
-          </a>
+)}
+            
                 </div>
               
             </div>

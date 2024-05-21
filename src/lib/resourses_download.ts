@@ -3,7 +3,7 @@ import { title } from "process";
 // Define the course 
 
 type resourceProps={
-
+id:number;
   description:string;
   downloadUrls:string;
  
@@ -28,23 +28,27 @@ export  const coursesData: Course[] = [
       category: 'frontend',
       resource:[
         {
+          id:1,
          description:"Beginner level  HTML",
          downloadUrls:"/downloads/1.0 introduction.rar",
         },
 
         {
-          description:"Intermediate   css",
+          id:2,
+          description:"Intermediate   HTML",
           downloadUrls:"/downloads/2.0 intermediate.rar",
          },
 
          {
-          description:"Advance level  html",
+          id:3,
+          description:"Advance level HTML",
           downloadUrls:"/downloads/3.0 advance_html.rar",
          },
 
          
          {
-          description:"Advance level  html",
+          id:4,
+          description:"Challenges 🤣",
           downloadUrls:"/downloads/4.0 challenges.rar",
          }
       ]
@@ -57,7 +61,7 @@ export  const coursesData: Course[] = [
       category: 'frontend',
       resource:[
 
-        {
+        {id:1,
           description:"pending----",
           downloadUrls:"/patient/",
          }
@@ -73,7 +77,7 @@ export  const coursesData: Course[] = [
       category: 'frontend',
       resource:[
       
-        {
+        {id:1,
           description:"pending...",
           downloadUrls:"/patient/",
          }
@@ -87,7 +91,7 @@ export  const coursesData: Course[] = [
       category: 'frontend',
       resource:[
        
-        {
+        {id:1,
           description:"pending...",
           downloadUrls:"/patient/",
          }
@@ -101,7 +105,7 @@ export  const coursesData: Course[] = [
       category: 'frontend',
       resource:[
        
-        {
+        {id:1,
           description:"pending...",
           downloadUrls:"/patient/",
          }
@@ -115,7 +119,7 @@ export  const coursesData: Course[] = [
       category: 'backend',
       resource:[
        
-        {
+        {id:1,
           description:"pending...",
           downloadUrls:"/patient/",
          }
@@ -128,7 +132,7 @@ export  const coursesData: Course[] = [
       imageUrl: '/resources/express.png',
       category: 'backend',
       resource:[
-        {
+        {id:1,
           description:"pending...",
           downloadUrls:"/patient/",
          }
@@ -141,7 +145,7 @@ export  const coursesData: Course[] = [
       imageUrl: '/resources/mongo.png',
       category: 'backend',
       resource:[
-        {
+        {id:1,
           description:"pending...",
           downloadUrls:"/patient/",
          }
@@ -154,7 +158,7 @@ export  const coursesData: Course[] = [
       imageUrl: '/resources/typescript.png',
       category: 'frontend',
       resource:[
-        {
+        {id:1,
           description:"pending...",
           downloadUrls:"/patient/",
          }
@@ -167,7 +171,7 @@ export  const coursesData: Course[] = [
       imageUrl: '/resources/msql.png',
       category: 'backend',
       resource:[
-        {
+        {id:1,
           description:"pending...",
           downloadUrls:"/patient/",
          }
@@ -180,7 +184,7 @@ export  const coursesData: Course[] = [
       imageUrl: '/img.png',
       category: 'backend',
       resource:[
-        {
+        {id:1,
           description:"pending...",
           downloadUrls:"/patient/",
          }
