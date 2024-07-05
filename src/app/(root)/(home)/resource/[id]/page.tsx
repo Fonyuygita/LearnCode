@@ -53,18 +53,18 @@ const ResourcePage = async ({ params }: { params: { id: string } }) => {
               {/* about leran code */}
               <div className="flex flex-col justify-between gap-3 mt-3.5 md:flex-row">
 
-<Link href="#" className='bg-purple whitespace-nowrap rounded-lg px-5 py-2.5 capitalize text-center '>Read Blog</Link>
+                <Link href="#" className='bg-purple whitespace-nowrap rounded-lg px-5 py-2.5 capitalize text-center '>Read Blog</Link>
 
                 <div className="flex flex-center justify-between gap-3">
-                <Link href="/">
-                  <Image src="/logoo.png" alt="logo" width={60} height={50} className="border border-white border-[50%] rounded-full" />
-                </Link>
+                  <Link href="/">
+                    <Image src="/logoo.png" alt="logo" width={60} height={50} className="border border-white border-[50%] rounded-full" />
+                  </Link>
 
 
 
-                <Link href="#" className='text-gradient_blue-purple '>WWW.learnCode.com</Link>
+                  <Link href="#" className='text-gradient_blue-purple '>WWW.learnCode.com</Link>
                 </div>
-               
+
 
 
 

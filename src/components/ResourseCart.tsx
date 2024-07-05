@@ -1,57 +1,57 @@
 import React from "react"
 import {
-    Card,
-    CardContent,
+  Card,
+  CardContent,
 
-   
-    CardHeader,
-    CardTitle,
-  } from "@/components/ui/card"
+
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card"
 import Image from "next/image";
 import Link from "next/link";
-  
 
 
-interface Props{
-    id:string;
-    title:string;
-    image:string;
-    slug:string;
-    downloadNumber:number;
-    downloadLink:string;
+
+interface Props {
+  id: string;
+  title: string;
+  image: string;
+  slug: string;
+  downloadNumber: number;
+  downloadLink: string;
 }
 
-const ResourceCart=({id, title, image, slug, downloadNumber, downloadLink}:Props)=>{
-    return(
-        <Card className="w-full max-w-fit border-0 !bg-transparent sm:max-w-[356px]">
-        <Link href={`/resource/${id}`}>
-          <CardHeader className="flex-center flex-col gap-2.5 !p-0">
-            <div className="h-fit w-full">
-              <Image 
-                src={image}
-                className="h-full rounded-md object-cover"
-                width={384}
-                height={440}
-                alt={title}
-              />
-            </div>
-            <CardTitle className="text-white paragraph-semibold line-clamp-1 w-full text-left">{title}</CardTitle>
-          </CardHeader>
-        </Link>
-        <CardContent className="flex-between mt-4 p-0">
-          <div className="flex-center body-medium gap-1.5 text-white">
-            <Image 
-              src="/downloads.svg" width={20} height={20} alt="download"
+const ResourceCart = ({ id, title, image, slug, downloadNumber, downloadLink }: Props) => {
+  return (
+    <Card className="w-full max-w-fit border-0 bg-[#17181a] p-2 shadow-2xl sm:max-w-[356px] hover:shadow-xl transition-all duration-100">
+      <Link href={`/resource/${id}`}>
+        <CardHeader className="flex-center flex-col gap-2.5 !p-0">
+          <div className="h-fit w-full">
+            <Image
+              src={image}
+              className="h-full rounded-md object-cover  scale-95"
+              width={384}
+              height={440}
+              alt={title}
             />
-            {downloadNumber}
           </div>
-          <Link href={downloadLink}  className="flex-center text-gradient_purple-blue body-semibold gap-1.5">
-            Download Now
-            <Image src="/arrow-blue.svg" width={13} height={10} alt="arrow" />
-          </Link>
-        </CardContent>
-      </Card>
-    )
+          <CardTitle className="text-white paragraph-semibold line-clamp-1 w-full text-left">{title}</CardTitle>
+        </CardHeader>
+      </Link>
+      <CardContent className="flex-between mt-4 p-0">
+        <div className="flex-center body-medium gap-1.5 text-white">
+          <Image
+            src="/downloads.svg" width={20} height={20} alt="download"
+          />
+          {downloadNumber}
+        </div>
+        <Link href={downloadLink} className="flex-center text-gradient_purple-blue body-semibold gap-1.5">
+          Download Now
+          <Image src="/arrow-blue.svg" width={13} height={10} alt="arrow" />
+        </Link>
+      </CardContent>
+    </Card>
+  )
 }
 
 export default ResourceCart
